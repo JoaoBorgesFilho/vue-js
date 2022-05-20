@@ -1,7 +1,7 @@
 const MyNameApp = {
     data() {
       return {
-        name: "João",
+        name: "",
         age: 29,
         input_name: ""
       }
@@ -11,7 +11,9 @@ const MyNameApp = {
 
         e.preventDefault();
 
-        console.log("Caiu aqui!")
+        console.log("this.input_name");
+
+        this.name = this.input_name;
 
       }
     }
